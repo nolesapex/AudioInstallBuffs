@@ -1,1 +1,16 @@
+HTTP/1.1 200 OK
+content-type: application/json;odata.metadata=minimal
+content-length: 982
 
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "id": "c95e3b3a-c33b-48da-a6e9-eb101e8a4205",
+    "city": "Redmond",
+    "country": "USA",
+    "department": "Help Center",
+    "displayName": "John Doe",
+    "givenName": "John",
+    "userPrincipalName": "john.doe@contoso.com",
+
+    ...
+}
