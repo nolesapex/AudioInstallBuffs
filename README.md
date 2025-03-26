@@ -7,7 +7,7 @@ We specialize in professional, mobile audio system installations—bringing the 
 
 ---
 
-## 🔧 Features
+## 🔧 Features the site includes:
 
 - 📅 Online scheduling form with distance filtering
 - 💸 Service selection filtered by your budget
@@ -21,6 +21,8 @@ We specialize in professional, mobile audio system installations—bringing the 
 
 We currently serve customers within a **100-mile radius**, with exceptions for premium pricing on extended distance requests.
 
+We typically will experiance higher volumes within a close radius (Local Counties)
+
 ---
 
 ## 🛠 Tech Stack
@@ -28,7 +30,7 @@ We currently serve customers within a **100-mile radius**, with exceptions for p
 - **HTML5 + CSS3 + JavaScript**
 - **VS Code**
 - **GitHub Pages (for hosting)**
-- (Coming soon: Backend + App)
+- (Coming soon: Backend + App) [Android App coming soon]
 
 ---
 
@@ -37,7 +39,7 @@ We currently serve customers within a **100-mile radius**, with exceptions for p
 ## 📬 Contact Us
 
 Business inquiries: `None at the moment!`  
-Customer support & scheduling: Use the [Contact](./contact.html) page.
+Customer support & scheduling: Use the [Contact](.public/contact.html) page.
 
 ---
 
