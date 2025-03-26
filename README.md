@@ -1,6 +1,6 @@
 # Precision Force Audio 🔊🚗
 
-**AudioInstallBuffs Official Website**  
+**Precision Force Audio Official Website**  
 Your trusted third-party vehicle audio installation service.
 
 We specialize in professional, mobile audio system installations—bringing the sound to your doorstep with flexible scheduling and service tailored to your budget.
@@ -43,4 +43,4 @@ Customer support & scheduling: Use the [Contact](.public/contact.html) page.
 
 ---
 
-© 2025 AudioFix Pros. All rights reserved.
+© 2025 Precision Force Audio. All rights reserved.
