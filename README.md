@@ -32,15 +32,11 @@ We currently serve customers within a **100-mile radius**, with exceptions for p
 
 ---
 
-## 🚀 Live Website
 
-[https://nolesapex.github.io/AudioInstallBuffs](https://nolesapex.github.io/AudioInstallBuffs) *(enable GitHub Pages to activate)*
-
----
 
 ## 📬 Contact Us
 
-Business inquiries: `audiofixpros@gmail.com`  
+Business inquiries: `None at the moment!`  
 Customer support & scheduling: Use the [Contact](./contact.html) page.
 
 ---
