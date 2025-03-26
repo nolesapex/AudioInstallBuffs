@@ -3,14 +3,14 @@ content-type: application/json;odata.metadata=minimal
 content-length: 982
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "@odata.context": "null",
     "id": "c95e3b3a-c33b-48da-a6e9-eb101e8a4205",
-    "city": "Redmond",
+    "city": "null",
     "country": "USA",
     "department": "Help Center",
     "displayName": "John Doe",
     "givenName": "John",
-    "userPrincipalName": "john.doe@contoso.com",
+    "userPrincipalName": "null",
 
     ...
 }
