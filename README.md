@@ -1,6 +1,6 @@
 # AudioInstallBuffs 🔊🚗
 
-**AudioFix Pros Official Website**  
+**AudioInstallBuffs Official Website**  
 Your trusted third-party vehicle audio installation service.
 
 We specialize in professional, mobile audio system installations—bringing the sound to your doorstep with flexible scheduling and service tailored to your budget.
