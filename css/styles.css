@@ -230,3 +230,14 @@ footer {
   background-color: #111; /* important fallback */
   display: block;
 }
+.hero-animation {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  flex: 1;
+  min-width: 250px;
+}
