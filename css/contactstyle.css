@@ -1,0 +1,37 @@
+/* ===== Contact Page Styles ===== */
+
+.contact-card {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.contact-form {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
