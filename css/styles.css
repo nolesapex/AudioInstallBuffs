@@ -178,3 +178,38 @@ footer {
     text-align: center;
   }
 }
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px 40px;
+  background-color: var(--background-color);
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: var(--surface-color);
+  color: #fff;
+  padding: 25px 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 15px var(--shadow-color);
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+.feature-card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
