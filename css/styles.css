@@ -159,6 +159,10 @@ a:hover {
 }
 
 .navbar-brand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
   font-weight: 400;
