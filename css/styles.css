@@ -181,20 +181,22 @@ footer {
 .features {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 60px 20px 40px;
   background-color: var(--background-color);
-  flex-wrap: wrap;
 }
 
 .feature-card {
   background-color: var(--surface-color);
-  color: #fff;
-  padding: 25px 20px;
   border-radius: var(--border-radius);
   box-shadow: 0 6px 15px var(--shadow-color);
-  max-width: 280px;
+  padding: 25px;
+  max-width: 300px;
+  min-width: 260px;
+  flex: 1;
   text-align: center;
+  color: var(--text-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -204,12 +206,12 @@ footer {
 }
 
 .feature-card h3 {
+  font-size: 1.3rem;
   color: var(--secondary-color);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .feature-card p {
+  font-size: 1rem;
   color: #ccc;
-  font-size: 0.95rem;
 }
-
