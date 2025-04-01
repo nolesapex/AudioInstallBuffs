@@ -1,8 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact US</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Precision Force Audio</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-    </html>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">Precision Force Audio</div>
+    <nav>
+      <ul class="navbar-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="appointments.html">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card" style="max-width: 600px; margin-top: 50px; text-align: center;">
+      <h2>📬 Get in Touch</h2>
+      <p>Have a question or want to schedule an install manually? Drop us a message below and we’ll get back to you shortly.</p>
+
+      <form style="text-align: left; margin-top: 30px;">
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" required><br /><br />
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required><br /><br />
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <button class="button" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Precision Force Audio. All rights reserved.
+  </footer>
+</body>
+
+</html>
