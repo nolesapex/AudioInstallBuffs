@@ -221,3 +221,12 @@ footer {
     text-align: center;
   }
 }
+.hero-animation video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  background-color: #111; /* important fallback */
+  display: block;
+}
