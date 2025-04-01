@@ -39,7 +39,7 @@ We typically will experiance higher volumes within a close radius (Local Countie
 ## 📬 Contact Us
 
 Business inquiries: `None at the moment!`  
-Customer support & scheduling: Use the [Contact](.public/contact.html) page.
+Customer support & scheduling: Use the [Contact](public/contact.html) page.
 
 ---
 
