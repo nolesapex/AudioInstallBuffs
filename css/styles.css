@@ -178,15 +178,6 @@ footer {
     text-align: center;
   }
 }
-.features {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 60px 20px 40px;
-  background-color: var(--background-color);
-}
-
 .features-wrapper {
   display: flex;
   justify-content: center;
