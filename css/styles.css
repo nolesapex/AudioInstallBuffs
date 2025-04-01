@@ -1,13 +1,14 @@
 /* Global styles and variables */
 :root {
-  --primary-color: #6200ea;
-  --secondary-color: #03dac6;
-  --text-color: #333;
-  --background-color: #f8f9fa;
-  --shadow-color: rgba(0,0,0,0.1);
-  --border-radius: 8px;
+  --primary-color: #7c3aed; /* Purple accent */
+  --secondary-color: #0ff; /* Cyan accent */
+  --text-color: #e0e0e0; /* Light gray for readability */
+  --background-color: #111; /* Dark background */
+  --surface-color: #181818; /* Dark card background */
+  --shadow-color: rgba(0,0,0,0.6);
+  --border-radius: 12px;
   --transition-duration: 0.3s;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Outfit', sans-serif;
 }
 
 body {
@@ -21,7 +22,8 @@ body {
 /* Typography */
 h1, h2, h3, h4 {
   margin-bottom: 0.6rem;
-  font-weight: 500;
+  font-weight: 700;
+  color: #fff;
 }
 
 h1 {
@@ -37,73 +39,82 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
+  color: #ccc;
 }
 
 /* Links */
 a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: color var(--transition-duration);
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 /* Buttons */
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background-color: var(--primary-color);
   color: #ffffff;
   border-radius: var(--border-radius);
-  box-shadow: 0 2px 5px var(--shadow-color);
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
   transition: background-color var(--transition-duration), transform var(--transition-duration);
+  font-weight: 600;
 }
 
 .button:hover {
   background-color: var(--secondary-color);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 /* Cards */
 .card {
-  background-color: #ffffff;
+  background-color: var(--surface-color);
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 10px var(--shadow-color);
-  padding: 20px;
-  margin: 15px;
+  box-shadow: 0 6px 15px var(--shadow-color);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
   transition: box-shadow var(--transition-duration), transform var(--transition-duration);
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
   transform: translateY(-5px);
 }
 
 /* Navigation bar */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px var(--shadow-color);
-  padding: 10px 20px;
+  justify-content: space-between;
+  background-color: var(--surface-color);
+  box-shadow: 0 3px 8px var(--shadow-color);
+  padding: 15px 25px;
 }
 
 .navbar-brand {
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-family: 'Outfit', cursive;
+  font-size: 2rem;
+  font-weight: 800;
   color: var(--primary-color);
+  text-shadow: 0 0 12px rgba(124, 58, 237, 0.7);
+  flex: 1;
+  text-align: center;
 }
 
 .navbar-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  flex: 1;
   display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-menu li {
@@ -111,34 +122,40 @@ a:hover {
 }
 
 .navbar-menu li a {
-  color: var(--text-color);
+  color: #e0e0e0;
+  font-weight: 600;
   transition: color var(--transition-duration);
 }
 
 .navbar-menu li a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* Footer */
 footer {
-  background-color: #ffffff;
-  padding: 15px 0;
+  background-color: var(--surface-color);
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 -4px 6px var(--shadow-color);
   font-size: 0.9rem;
-  color: #555;
+  color: #bbb;
+  box-shadow: 0 -3px 8px var(--shadow-color);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
   }
 
   .navbar-menu {
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    text-align: center;
   }
 
   .navbar-menu li {
@@ -146,6 +163,12 @@ footer {
   }
 
   .card {
-    margin: 15px auto;
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
   }
 }
