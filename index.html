@@ -1,99 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome! | Precision Force Audio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #111;
-            color: #fff;
-        }
 
-        header {
-            background: #000;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 
-            header h1 {
-                font-size: 2.5rem;
-                margin: 0;
-            }
-
-        nav {
-            margin-top: 10px;
-        }
-
-            nav a {
-                color: #0ff;
-                margin: 0 15px;
-                text-decoration: none;
-                font-weight: 600;
-            }
-
-                nav a:hover {
-                    color: #fff;
-                }
-
-        main {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .cta {
-            margin-top: 30px;
-        }
-
-            .cta a {
-                display: inline-block;
-                background: #0ff;
-                color: #000;
-                padding: 15px 30px;
-                border-radius: 8px;
-                font-weight: 600;
-                text-decoration: none;
-                box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
-            }
-
-                .cta a:hover {
-                    background: #00caca;
-                }
-
-        footer {
-            margin-top: 100px;
-            padding: 20px;
-            text-align: center;
-            background: #000;
-            font-size: 0.9rem;
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    <header>
-        <h1>Precision Force Audio</h1>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-brand">Precision Force Audio</div>
         <nav>
-            <a href="public/about.html">About</a>
-            <a href="public/services.html">Services</a>
-            <a href="public/appointments.html">Get Started</a>
-            <a href="public/contact.html">Contact</a>
+            <ul class="navbar-menu">
+                <li><a href="public/about.html">About</a></li>
+                <li><a href="public/services.html">Services</a></li>
+                <li><a href="public/appointments.html">Get Started</a></li>
+                <li><a href="public/contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
+
+    <!-- Main content -->
     <main>
-        <h2>Your Ride. Your Sound. Our Expertise.</h2>
-        <p>We bring premium audio installation to your doorstep � hassle-free, professional, and tailored to your budget.</p>
-        <div class="cta">
-            <a href="public/appointments.html">Schedule Your Install</a>
-        </div>
+        <section class="card" style="text-align: center; margin-top: 40px;">
+            <h1>Your Ride. Your Sound. Our Expertise.</h1>
+            <p>
+                We bring premium audio installation directly to your doorstep—hassle-free, professional, and tailored to your budget.
+            </p>
+            <a class="button" href="public/appointments.html">Schedule Your Install</a>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer>
         &copy; 2025 Precision Force Audio. All rights reserved.
     </footer>
 </body>
+
 </html>
+
