@@ -4,79 +4,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome! | Precision Force Audio</title>
-
+  <title>Precision Force Audio | Mobile Audio Installation</title>
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
+  
+  <meta name="description" content="Precision Force Audio provides professional mobile audio installation tailored to your needs." />
 </head>
 
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="navbar-brand">Precision Force Audio</div>
-    <nav>
-      <ul class="navbar-menu">
-        <li><a href="public/about.html">About</a></li>
-        <li><a href="public/services.html">Services</a></li>
-        <li><a href="public/appointments.html">Get Started</a></li>
-        <li><a href="public/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="navbar-brand">Precision Force Audio</div>
+      <nav>
+        <ul class="navbar-menu">
+          <li><a href="public/about.html">About</a></li>
+          <li><a href="public/services.html">Services</a></li>
+          <li><a href="public/appointments.html">Get Started</a></li>
+          <li><a href="public/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section (with animation) -->
-    <section class="hero-section">
-      <div class="card hero-content">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="storage/assets/anim/AudioAnimation.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <div class="container">
         <h1>Your Ride. Your Sound. Our Expertise.</h1>
-        <p>
-          We bring premium audio installation directly to your doorstep — hassle-free, professional, and tailored to your budget.
-        </p>
+        <p>Premium mobile audio installations brought directly to your doorstep.</p>
         <a class="button" href="public/appointments.html">Schedule Your Install</a>
       </div>
-      <div class="card hero-animation">
-        <video autoplay muted loop playsinline>
-          <source src="storage/assets/anim/AudioAnimation.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Features Section -->
-    <section class="features-wrapper">
-      <div class="features-card">
-        <div class="feature-item">
-          <h3>🚗 Mobile Installations</h3>
-          <p>We come to you — whether you're at home, work, or on the road.</p>
-        </div>
-        <div class="feature-item">
-          <h3>💸 Budget-Friendly Options</h3>
-          <p>High-quality installs that match your budget and style.</p>
-        </div>
-        <div class="feature-item">
-          <h3>🔊 Premium Components</h3>
-          <p>We work with the best audio brands to bring you unmatched sound.</p>
-        </div>
-      </div>
-    </section>
+  <!-- Features Section -->
+  <section class="features-section container">
+    <div class="feature">
+      <h3>🚗 Mobile Installations</h3>
+      <p>Professional installations wherever you are.</p>
+    </div>
+    <div class="feature">
+      <h3>💸 Budget-Friendly</h3>
+      <p>High-quality services tailored to your budget.</p>
+    </div>
+    <div class="feature">
+      <h3>🔊 Premium Components</h3>
+      <p>Top brands for superior sound.</p>
+    </div>
+  </section>
 
-     
-    <section class="about-intro">
-      <h2>Who We Are</h2>
-      <p>
-        Precision Force Audio is a team of passionate car audio experts dedicated to bringing professional-grade installations straight to your location. We live and breathe sound — and we’re obsessed with making your vehicle sound system powerful, clean, and tailored to you.
-      </p>
-    </section>
-
-
-    
-  </main>
+  <!-- About Intro -->
+  <section class="about-intro container">
+    <h2>About Precision Force Audio</h2>
+    <p>
+      We specialize in mobile audio installations, ensuring your vehicle delivers a powerful, crystal-clear sound. 
+      Our passionate team handles everything from setup to tuning, right at your location.
+    </p>
+  </section>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Precision Force Audio. All rights reserved.
+    <div class="footer-content container">
+      <div class="footer-section">
+        <h4>PRECISION FORCE AUDIO</h4>
+        <ul>
+          <li><a href="public/about.html">About Us</a></li>
+          <li><a href="public/services.html">Services</a></li>
+          <li><a href="public/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>LOCATION</h4>
+        <p>Your address or mobile service area</p>
+        <p>Phone: Your contact number</p>
+      </div>
+      <div class="footer-section">
+        <h4>HOURS</h4>
+        <p>Monday - Friday: 8 AM - 6 PM<br>Saturday & Sunday: By Appointment</p>
+      </div>
+      <div class="footer-section">
+        <h4>CONNECT WITH US</h4>
+        <p>
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Precision Force Audio. All rights reserved.
+    </div>
   </footer>
 </body>
 
