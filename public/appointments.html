@@ -93,7 +93,7 @@
 
   <main>
     <h2>We bring the sound to you — book your install now!</h2>
-    <form action="#" method="POST">
+    <form id="appointmentForm">
       <div>
         <label for="location">Service Location (City or ZIP):</label>
         <input type="text" id="location" name="location" placeholder="e.g. Los Angeles, CA" required>
@@ -131,5 +131,47 @@
   <footer>
     &copy; 2025 AudioInstallBuffs. All rights reserved.
   </footer>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCCYJQVq9-vRpRLShPk6vJ6aiv5kfWPbY0",
+      authDomain: "precisionforceaudio.firebaseapp.com",
+      projectId: "precisionforceaudio",
+      storageBucket: "precisionforceaudio.appspot.com",
+      messagingSenderId: "1076909437778",
+      appId: "YOUR_APP_ID_HERE" // Replace after registering the web app
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const form = document.getElementById("appointmentForm");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const data = {
+        location: form.location.value,
+        date: form.date.value,
+        budget: parseFloat(form.budget.value),
+        vehicle: form.vehicle.value,
+        services: form.services.value,
+        contact: form.contact.value,
+        status: "pending"
+      };
+
+      try {
+        await addDoc(collection(db, "appointmentRequests"), data);
+        alert("Appointment request submitted!");
+        form.reset();
+      } catch (error) {
+        console.error("Error writing to Firestore: ", error);
+        alert("Something went wrong. Please try again later.");
+      }
+    });
+  </script>
 </body>
 </html>
