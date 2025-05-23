@@ -10,6 +10,96 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/aboutstyle.css" />
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #f5f7fa;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1b1f23;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .navbar-menu {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .about-wrapper {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .about-intro h2,
+    .about-mission h3 {
+      font-weight: 800;
+      color: #2b2d42;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .about-intro p,
+    .about-mission p,
+    .about-card p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .about-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-left: 4px solid #556cd6;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .about-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .about-card h4 {
+      margin-top: 0;
+      font-weight: 600;
+      color: #3f51b5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1b1f23;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -36,7 +126,7 @@
     </section>
 
     <section class="about-mission">
-      <h3>🎯 Our Mission</h3>
+      <h3>Our Mission</h3>
       <p>
         To make high-quality car audio accessible and convenient for everyone. Whether you're an audiophile or just want better bass, we deliver clean installs with top-tier service and components.
       </p>
@@ -44,15 +134,15 @@
 
     <section class="about-cards">
       <div class="about-card">
-        <h4>🔧 Professional Installation</h4>
+        <h4>Professional Installation</h4>
         <p>Years of experience, zero guesswork. We treat every ride like it’s our own.</p>
       </div>
       <div class="about-card">
-        <h4>📍 We Come to You</h4>
+        <h4>On-Site Service</h4>
         <p>No more waiting at shops. We install at your driveway, office, or garage.</p>
       </div>
       <div class="about-card">
-        <h4>🎶 Tailored Sound</h4>
+        <h4>Customized Sound</h4>
         <p>Your vehicle. Your budget. Your vibe. We match the system to your style.</p>
       </div>
     </section>
