@@ -6,6 +6,7 @@
   <title>Schedule Your Install | AudioInstallBuffs</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <style>
     body {
       font-family: 'Outfit', sans-serif;
@@ -124,7 +125,9 @@
         <input type="text" id="contact" name="contact" placeholder="you@email.com or (555) 555-5555" required>
       </div>
 
-      <button type="submit">Submit Appointment Request</button>
+      <div class="g-recaptcha" data-sitekey="6LfwBEcrAAAAAFENP2QOu7ODjNwYVtpKAtgD5pfD"></div>
+
+      <button type="submit" id="submitButton">Submit Appointment Request</button>
     </form>
   </main>
 
@@ -149,9 +152,21 @@
     const db = getFirestore(app);
 
     const form = document.getElementById("appointmentForm");
+    const submitButton = document.getElementById("submitButton");
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting...";
+
+      // Get the v2 response
+      const recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) {
+        alert("Please complete the reCAPTCHA verification.");
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Appointment Request";
+        return;
+      }
 
       const data = {
         location: form.location.value,
@@ -160,16 +175,21 @@
         vehicle: form.vehicle.value,
         services: form.services.value,
         contact: form.contact.value,
-        status: "pending"
+        status: "pending",
+        recaptchaResponse: recaptchaResponse
       };
 
       try {
         await addDoc(collection(db, "appointmentRequests"), data);
         alert("Appointment request submitted!");
         form.reset();
+        grecaptcha.reset();
       } catch (error) {
         console.error("Error writing to Firestore: ", error);
         alert("Something went wrong. Please try again later.");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Appointment Request";
       }
     });
   </script>
