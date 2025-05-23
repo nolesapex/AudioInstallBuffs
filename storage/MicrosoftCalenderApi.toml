@@ -1,16 +1,19 @@
-HTTP/1.1 200 OK
-content-type: application/json;odata.metadata=minimal
-content-length: 982
+[calendar_api]
+name = "Microsoft Calendar"
+description = "Integration with Microsoft Graph Calendar API"
+base_url = "https://graph.microsoft.com/v1.0"
+auth_type = "OAuth2"
+scopes = ["Calendars.ReadWrite", "offline_access"]
 
-{
-    "@odata.context": "null",
-    "id": "c95e3b3a-c33b-48da-a6e9-eb101e8a4205",
-    "city": "null",
-    "country": "USA",
-    "department": "Help Center",
-    "displayName": "John Doe",
-    "givenName": "John",
-    "userPrincipalName": "null",
+[calendar_api.auth]
+client_id = "your-client-id"
+client_secret = "your-client-secret"
+redirect_uri = "https://yourapp.com/auth/callback"
+token_url = "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+auth_url = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
 
-    ...
-}
+[calendar_api.endpoints]
+get_events = "/me/events"
+create_event = "/me/events"
+update_event = "/me/events/{event-id}"
+delete_event = "/me/events/{event-id}"
